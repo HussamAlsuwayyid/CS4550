@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>design</title>
+	</head>
+	
+	<body>
+
+	<h1> User First Design</h1>
+	<p>*As a new user, i should be able to register an account.
+	<br>&emsp;&emsp;To create an account you should go to the home page and click the "register" button.
+	<br>&emsp;&emsp;A form will appear with fields: email address, username and password. After submission, you will receive an email to activate the account.
+
+<br><br>*As a registered user, i should be able to send messages.
+	<br>&emsp;&emsp;To send a message, go to your homepage and write in the text field, then press "send" button.
+
+<br><br>*As a registered user, i should be able to follow other people.
+<br>	&emsp;&emsp;To follow a user, press on the user's name, then press the follow button.
+
+<br><br>*As a registered user, i can view hashtags. 
+<br>	&emsp;&emsp;To view a hashtag, press on the hashtag link in the message.
+
+<br><br>*As a registered user, i can block another user from viewing my messages.
+<br>	&emsp;&emsp;To block a user, go to their account and choose "block this user" from the drop down list.
+	</p>
+	<br>
+	<h1>Data First Design</h1>
+	<p>Resourses: 
+	<br>
+	<br><b>*Users</b>
+		<br>&emsp;&emsp;*username
+		<br>&emsp;&emsp;*email
+		<br>&emsp;&emsp;*password
+	<br><br>GET will open the user page, which has the name of the user, messages posted by the user and list of actions(follow, block...).
+<br>	PUT is the user registration page, it contains fields for email, username and password.
+	<br>PATCH changes the username or the password, one at a time.
+	<br>DELETE will open a form to confirm whether the user want to proceed to delete the account.
+	<br>
+	<br><b>*Messages</b>
+	<br>&emsp;&emsp;*content
+	<br>&emsp;&emsp;*time
+	<br>&emsp;&emsp;*the user who sent the message
+	<br><br>GET will open the message, showing the content of message and the username of the sender.
+	<br>PUT will send the message.
+	<br>PATCH edits the content of the message.
+	<br>DELETE opens a confirmation page to make sure the user did not hit the delete button by mistake.
+	</p>
+
+
+
+</body>
+
+</html>
